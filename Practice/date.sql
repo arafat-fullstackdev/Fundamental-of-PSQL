@@ -1,0 +1,18 @@
+-- Active: 1748169122316@@127.0.0.1@8006@postgres
+show TIMEZONE;
+CREATE TABLE timeZ(ts TIMESTAMP without time zone, tsz TIMESTAMP with TIME zone);
+SELECT *  FROM timeZ;
+
+INSERT INTO timeZ VALUES('2025-05-27 10:30:00','2025-05-27 10:30:00');
+SELECT now()::TIME;
+SELECT now()::DATE;
+
+SELECT to_char(now(), 'yyyy/mm//dd');
+
+--INTERVAL
+SELECT CURRENT_DATE - INTERVAL '600 year 4 month';
+
+SELECT age(CURRENT_DATE, '1896-11-25');
+
+SELECT extract(month FROM '2025-04-11'::DATE);
+SELECT 1:: BOOLEAN;
