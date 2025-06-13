@@ -98,7 +98,8 @@ INSERT INTO orders (customer_id, order_date, total_amount) VALUES
       INNER JOIN departments AS d  
       ON w.department_id = d.department_id;
 
-   --2. **Group By Department with Average Salary**
+   --2. **Group By Department with Average Salary** 
+   SELECT * from worker WHERE salary = '72000';
 
    --3. **Count Employees in Each Department**
 
